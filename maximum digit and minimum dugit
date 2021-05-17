@@ -1,0 +1,11 @@
+num=int(input())
+s=9
+l=0
+while num:
+    d=num%10
+    if s>d:
+        s=d
+    if l<d:
+        l=d
+    num=num//10
+print("maximim digit",l,"minimum digit",s)
