@@ -1,0 +1,13 @@
+def gen_fib(sv,lv,a=0,b=1):
+    if sv==0:
+        print(a,b,end=" ")
+    if sv==1:
+        print(b,end=" ")
+    for i in range(sv,lv+1):
+        c=a+b
+        if c>=sv and c<=lv:
+            print(c,end=" ")
+        a=b
+        b=c
+sv,lv=map(int,input().split())
+gen_fib(sv,lv)
