@@ -1,0 +1,15 @@
+num=int(input())
+co=1
+ev=0
+od=0
+ce=1
+while num:
+    d=num%10
+    if d%2==0:
+        ev=ev+d*ce
+        ce=ce*10
+    else:
+        od=od+d*co
+        co=co*10
+    num=num//10
+print(" even number ",ev,"odd number ",od)
