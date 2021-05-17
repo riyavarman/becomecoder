@@ -1,0 +1,23 @@
+num=int(input())
+s=num%10
+l=num%10
+maxc=0
+minc=0
+while num:
+    d=num%10
+    if d==l:
+        maxc+=1
+    elif l<d:
+        l=d
+        maxc=1
+    if d==s:
+        minc+=1
+    elif s>d:
+        s=d
+        minc+=1
+    num=num//10
+print("minimum digit count",minc,"maximum digit count",maxc)
+    
+        
+        
+    
