@@ -1,0 +1,13 @@
+def isharshad(num):
+    s=0
+    n=num
+    while num:
+        d=num%10
+        s+=d
+        num=num//10
+    if n%s==0:
+        return True
+    else:
+        return False
+num=int(input())
+print(isharshad(num))
